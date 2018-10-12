@@ -1,0 +1,19 @@
+{
+  "name": "coding-challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samscha/coding-challenges.git"
+  },
+  "author": "Samuel Cha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samscha/coding-challenges/issues"
+  },
+  "homepage": "https://github.com/samscha/coding-challenges#readme"
+}
