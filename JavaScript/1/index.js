@@ -1,1 +1,4 @@
-// you code here
+module.exports = str =>
+{
+    // your code here
+}

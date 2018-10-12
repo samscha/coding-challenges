@@ -4,7 +4,7 @@
   "description": "Practice coding challenges",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter nyan './**/*.test.js'"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/samscha/coding-challenges/issues"
   },
-  "homepage": "https://github.com/samscha/coding-challenges#readme"
+  "homepage": "https://github.com/samscha/coding-challenges#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
 }
