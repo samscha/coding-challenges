@@ -1,5 +1,7 @@
 module.exports = str =>
 {
+    if (!str || !str.trim('')) throw new Error(``);
+
     const chars = new Set();
 
     for (let i = 0; i < str.length; i++)
@@ -8,7 +10,7 @@ module.exports = str =>
 
         if (chars.has(c)) return false;
 
-        chars.add(c);
+        if (c !== ' ') chars.add(c);
     }
 
     return true;

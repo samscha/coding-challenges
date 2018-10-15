@@ -4,7 +4,7 @@
   "description": "Practice coding challenges",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter nyan './**/*.test.js'"
+    "test": "mocha './**/*.test.js'"
   },
   "repository": {
     "type": "git",
