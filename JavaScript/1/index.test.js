@@ -78,4 +78,17 @@ describe(`QUESTION 1: Is Unique`, function() {
 
         done();
     });
+
+    it(`should return false for a string with whitespace`, function(done) {
+        const strs =
+        [
+            ' abc a',
+            ' a b c a',
+        ];
+
+        strs.forEach(s => assert.equal(f(s), false));
+
+        done();
+    });
+
 });
