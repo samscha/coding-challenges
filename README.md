@@ -6,15 +6,15 @@
 npm install && npm test
 ```
 
-Make sure all tests pass (this will test the solutions), then
+Make sure all tests pass (this will test the solutions), then:
 
 ```console
 cd JavaScript
 ```
 
-(or whichever language you prefer and is available) and
+(or whichever language you prefer and is available),
 
-start with question 1
+start with question one:
 
 ```console
 cd 1
