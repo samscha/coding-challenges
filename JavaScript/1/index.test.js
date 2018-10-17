@@ -67,7 +67,7 @@ describe(`QUESTION 1: Is Unique`, function() {
         done();
     });
 
-    it(`should return true for a string with whitespace`, function(done) {
+    it(`should return true for a unique string with whitespace`, function(done) {
         const strs =
         [
             ' abc',
@@ -79,7 +79,7 @@ describe(`QUESTION 1: Is Unique`, function() {
         done();
     });
 
-    it(`should return false for a string with whitespace`, function(done) {
+    it(`should return false for a non-unique string with whitespace`, function(done) {
         const strs =
         [
             ' abc a',
