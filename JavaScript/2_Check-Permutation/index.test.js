@@ -36,8 +36,8 @@ describe(`QUESTION 2: Check Permutation`, function() {
         });
 
         it(`should return true for complex permutations`, function(done) {
-            const s1 = `asdfghjklpoiuytrewq`;
-            const s2 = `qwertyuioplkjhgfdsa`;
+            const s1 = `aaasdfghjklpoiuytrewq`;
+            const s2 = `qweaartyuioplkjhgfdsa`;
 
             assert.equal(f(s1, s2), true);
 
@@ -84,8 +84,8 @@ describe(`QUESTION 2: Check Permutation`, function() {
         });
 
         it(`should return true for complex permutations`, function(done) {
-            const s1 = `asdfghjklpoiuytrewq`;
-            const s2 = `qwertyuioplkjhgfdsa`;
+            const s1 = `aaasdfghjklpoiuytrewq`;
+            const s2 = `qweaartyuioplkjhgfdsa`;
 
             assert.equal(f(s1, s2), true);
 
