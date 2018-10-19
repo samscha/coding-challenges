@@ -6,20 +6,21 @@ module.exports = (s1, s2) =>
 
     for (let i = 0; i < s1.length; i++)
     {
-        const c = s1[i];
+        const c1 = s1[i];
+        const c2 = s2[i];
 
-        chars.set(c, chars.get(c) + 1 || 1);
-    }
+        if (c1 === c2) continue;
 
-    for (let i = 0; i < s2.length; i++)
-    {
-        const c = s2[i];
+        const m1 = chars.get(c1);
+        const m2 = chars.get(c2);
 
-        if (!chars.has(c) || chars.get(c) < 1) return false;
+        if (!m1) chars.set(c1, 1);
+        else if (m1 === -1) chars.delete(c1);
+        else chars.set(c1, ++c1m);
 
-        chars.set(c, chars.get(c) - 1);
-
-        if (chars.get(c) === 0) chars.delete(c);
+        if (!m2) chars.set(c2, -1);
+        else if (m2 === 1) chars.delete(c2);
+        else chars.set(c2, --c2m);
     }
 
     return chars.size === 0;
